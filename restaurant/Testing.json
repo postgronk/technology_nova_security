@@ -1,0 +1,807 @@
+{
+	"info": {
+		"_postman_id": "66055230-1805-44a7-aa03-18ef1a0b6576",
+		"name": "Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "32418778-66055230-1805-44a7-aa03-18ef1a0b6576"
+	},
+	"item": [
+		{
+			"name": "restaurant",
+			"item": [
+				{
+					"name": "menu",
+					"item": [
+						{
+							"name": "item",
+							"item": [
+								{
+									"name": "{itemId}",
+									"item": [
+										{
+											"name": "{price}",
+											"item": [
+												{
+													"name": "update Menu Item Price",
+													"id": "1afe9466-5308-457c-b32e-3aa7011d5740",
+													"protocolProfileBehavior": {
+														"disableBodyPruning": true
+													},
+													"request": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/restaurant/menu/item/:itemId/:price",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"restaurant",
+																"menu",
+																"item",
+																":itemId",
+																":price"
+															],
+															"variable": [
+																{
+																	"key": "itemId",
+																	"value": "<long>",
+																	"description": "(Required) "
+																},
+																{
+																	"key": "price",
+																	"value": "<number>",
+																	"description": "(Required) "
+																}
+															]
+														}
+													},
+													"response": [
+														{
+															"id": "d17d457e-4cc7-4734-81d1-dab753982c1c",
+															"name": "OK",
+															"originalRequest": {
+																"method": "PUT",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "*/*"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/restaurant/menu/item/:itemId/:price",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"restaurant",
+																		"menu",
+																		"item",
+																		":itemId",
+																		":price"
+																	],
+																	"variable": [
+																		{
+																			"key": "itemId",
+																			"value": "<long>",
+																			"description": "(Required) "
+																		},
+																		{
+																			"key": "price",
+																			"value": "<number>",
+																			"description": "(Required) "
+																		}
+																	]
+																}
+															},
+															"status": "OK",
+															"code": 200,
+															"_postman_previewlanguage": "text",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "*/*",
+																	"uuid": "b9f9399a-c8f7-4724-8b70-9d065447f5c2"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"id\": \"<long>\",\n  \"menuId\": \"<long>\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"<string>\",\n  \"group\": \"<string>\",\n  \"price\": \"<number>\"\n}"
+														}
+													]
+												}
+											],
+											"id": "3bd742e7-0145-4c24-897d-5a6649010f7f"
+										}
+									],
+									"id": "392cfa00-e5fe-43a9-aa62-ecc5af9761b2"
+								}
+							],
+							"id": "748d0d62-f51e-43c2-a090-98ac14a003d6"
+						},
+						{
+							"name": "create Menu",
+							"id": "bb9254e2-96a7-47da-9801-6c9090610e5e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/restaurant/menu?id=<long>&restaurantId=<long>&active=<boolean>&menuItems=[object Object],[object Object]",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"restaurant",
+										"menu"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "<long>",
+											"description": "(Required) "
+										},
+										{
+											"key": "restaurantId",
+											"value": "<long>",
+											"description": "(Required) "
+										},
+										{
+											"key": "active",
+											"value": "<boolean>",
+											"description": "(Required) "
+										},
+										{
+											"key": "menuItems",
+											"value": "[object Object],[object Object]",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "f3b02f15-4030-467f-ab62-54b4e87b3087",
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/restaurant/menu?id=<long>&restaurantId=<long>&active=<boolean>&menuItems=[object Object],[object Object]",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"restaurant",
+												"menu"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "<long>",
+													"description": "(Required) "
+												},
+												{
+													"key": "restaurantId",
+													"value": "<long>",
+													"description": "(Required) "
+												},
+												{
+													"key": "active",
+													"value": "<boolean>",
+													"description": "(Required) "
+												},
+												{
+													"key": "menuItems",
+													"value": "[object Object],[object Object]",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*",
+											"uuid": "b943ee5d-1b05-4a72-ade1-a1fa4d2faaae"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<long>\",\n  \"restaurantId\": \"<long>\",\n  \"active\": \"<boolean>\",\n  \"menuItems\": [\n    {\n      \"id\": \"<long>\",\n      \"menuId\": \"<long>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"type\": \"<string>\",\n      \"group\": \"<string>\",\n      \"price\": \"<number>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"menuId\": \"<long>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"type\": \"<string>\",\n      \"group\": \"<string>\",\n      \"price\": \"<number>\"\n    }\n  ]\n}"
+								}
+							]
+						}
+					],
+					"id": "4112af02-80c7-4cb0-a8df-7e131a10b296"
+				},
+				{
+					"name": "public",
+					"item": [
+						{
+							"name": "menu",
+							"item": [
+								{
+									"name": "{restaurantId}",
+									"item": [
+										{
+											"name": "get Menu",
+											"id": "0517b352-7887-43c3-9c2d-d0098ca10fa8",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/restaurant/public/menu/:restaurantId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"restaurant",
+														"public",
+														"menu",
+														":restaurantId"
+													],
+													"variable": [
+														{
+															"key": "restaurantId",
+															"value": "<long>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "6ed5e0bc-9824-47a1-b873-233348e9e0db",
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/restaurant/public/menu/:restaurantId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"restaurant",
+																"public",
+																"menu",
+																":restaurantId"
+															],
+															"variable": [
+																{
+																	"key": "restaurantId",
+																	"value": "<long>",
+																	"description": "(Required) "
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "*/*",
+															"uuid": "30f8f469-d171-41ad-ab68-c17365c36582"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"id\": \"<long>\",\n  \"restaurantId\": \"<long>\",\n  \"active\": \"<boolean>\",\n  \"menuItems\": [\n    {\n      \"id\": \"<long>\",\n      \"menuId\": \"<long>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"type\": \"<string>\",\n      \"group\": \"<string>\",\n      \"price\": \"<number>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"menuId\": \"<long>\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"type\": \"<string>\",\n      \"group\": \"<string>\",\n      \"price\": \"<number>\"\n    }\n  ]\n}"
+												}
+											]
+										}
+									],
+									"id": "6b30dc39-dad8-4fcd-8d52-c84c96f1f98e"
+								}
+							],
+							"id": "2568dd8e-1a9a-4e16-8834-c9959d502ee3"
+						},
+						{
+							"name": "list",
+							"item": [
+								{
+									"name": "get Restaurants",
+									"id": "5857e4c1-1e81-4609-aa00-aac192c7b429",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/restaurant/public/list",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"restaurant",
+												"public",
+												"list"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "10432939-ade4-41a4-9e26-6fab3f614c73",
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/restaurant/public/list",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"restaurant",
+														"public",
+														"list"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*",
+													"uuid": "b8416432-6b63-4002-9caa-ca25838f9725"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"id\": \"<long>\",\n    \"name\": \"<string>\",\n    \"location\": \"<string>\",\n    \"type\": \"<string>\"\n  },\n  {\n    \"id\": \"<long>\",\n    \"name\": \"<string>\",\n    \"location\": \"<string>\",\n    \"type\": \"<string>\"\n  }\n]"
+										}
+									]
+								}
+							],
+							"id": "60f5117e-ba18-43ec-9f7d-7923e2122fe7"
+						}
+					],
+					"id": "89936e51-497b-4eda-be47-0bb6ceac44ea"
+				},
+				{
+					"name": "create Restaurant",
+					"id": "8ba724ab-2e02-405b-9fe5-f222271eb596",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/restaurant?id=<long>&name=<string>&location=<string>&type=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"restaurant"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "<long>",
+									"description": "(Required) "
+								},
+								{
+									"key": "name",
+									"value": "<string>",
+									"description": "(Required) "
+								},
+								{
+									"key": "location",
+									"value": "<string>",
+									"description": "(Required) "
+								},
+								{
+									"key": "type",
+									"value": "<string>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "a7e5caac-e235-417a-8013-baa4c4969239",
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/restaurant?id=<long>&name=<string>&location=<string>&type=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"restaurant"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "<long>",
+											"description": "(Required) "
+										},
+										{
+											"key": "name",
+											"value": "<string>",
+											"description": "(Required) "
+										},
+										{
+											"key": "location",
+											"value": "<string>",
+											"description": "(Required) "
+										},
+										{
+											"key": "type",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*",
+									"uuid": "366aa30a-6079-4354-985c-4a850ac5e3c0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"location\": \"<string>\",\n  \"type\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "53121955-55fb-4352-b729-db68013f61be"
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "{restaurantId}",
+					"item": [
+						{
+							"name": "list",
+							"item": [
+								{
+									"name": "get Orders",
+									"id": "de8aad35-aea8-4661-976c-41974fdc5802",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/order/:restaurantId/list",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"order",
+												":restaurantId",
+												"list"
+											],
+											"variable": [
+												{
+													"key": "restaurantId",
+													"value": "<long>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "82c5ddcc-7871-4a00-8f7f-2fa55c54870e",
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/order/:restaurantId/list",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"order",
+														":restaurantId",
+														"list"
+													],
+													"variable": [
+														{
+															"key": "restaurantId",
+															"value": "<long>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*",
+													"uuid": "16ebd397-6b6c-4714-8db9-1e912bf1842d"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"id\": \"<long>\",\n    \"restaurantId\": \"<long>\",\n    \"total\": \"<number>\",\n    \"orderItems\": [\n      {\n        \"id\": \"<long>\",\n        \"orderId\": \"<long>\",\n        \"menuItemId\": \"<long>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<long>\",\n        \"orderId\": \"<long>\",\n        \"menuItemId\": \"<long>\",\n        \"price\": \"<number>\"\n      }\n    ]\n  },\n  {\n    \"id\": \"<long>\",\n    \"restaurantId\": \"<long>\",\n    \"total\": \"<number>\",\n    \"orderItems\": [\n      {\n        \"id\": \"<long>\",\n        \"orderId\": \"<long>\",\n        \"menuItemId\": \"<long>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<long>\",\n        \"orderId\": \"<long>\",\n        \"menuItemId\": \"<long>\",\n        \"price\": \"<number>\"\n      }\n    ]\n  }\n]"
+										}
+									]
+								}
+							],
+							"id": "46112eb9-7ace-4d42-bfea-24cc1e769301"
+						}
+					],
+					"id": "f846030c-3daf-4ada-b4bc-f42b8ad78df2"
+				},
+				{
+					"name": "{orderId}",
+					"item": [
+						{
+							"name": "get Order Details",
+							"id": "03c53627-908f-4686-bf7b-4310e969e58c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/order/:orderId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"order",
+										":orderId"
+									],
+									"variable": [
+										{
+											"key": "orderId",
+											"value": "<long>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "88dfc7f6-edf4-4ab7-8dcc-9dcf4a362547",
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/order/:orderId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"order",
+												":orderId"
+											],
+											"variable": [
+												{
+													"key": "orderId",
+													"value": "<long>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*",
+											"uuid": "3a5b6fc6-65d3-4bef-b6c5-16aeb0b9702f"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<long>\",\n  \"restaurantId\": \"<long>\",\n  \"total\": \"<number>\",\n  \"orderItems\": [\n    {\n      \"id\": \"<long>\",\n      \"orderId\": \"<long>\",\n      \"menuItemId\": \"<long>\",\n      \"price\": \"<number>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"orderId\": \"<long>\",\n      \"menuItemId\": \"<long>\",\n      \"price\": \"<number>\"\n    }\n  ]\n}"
+								}
+							]
+						}
+					],
+					"id": "486b051b-2add-450e-b8d6-163372de5ea6"
+				},
+				{
+					"name": "create Order",
+					"id": "f6e2e6b6-6b77-42e5-8390-98e736acf936",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/order?id=<long>&restaurantId=<long>&total=<number>&orderItems=[object Object],[object Object]",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"order"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "<long>",
+									"description": "(Required) "
+								},
+								{
+									"key": "restaurantId",
+									"value": "<long>",
+									"description": "(Required) "
+								},
+								{
+									"key": "total",
+									"value": "<number>",
+									"description": "(Required) "
+								},
+								{
+									"key": "orderItems",
+									"value": "[object Object],[object Object]",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "409e3a75-af82-4aec-8f6b-218faef09539",
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/order?id=<long>&restaurantId=<long>&total=<number>&orderItems=[object Object],[object Object]",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"order"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "<long>",
+											"description": "(Required) "
+										},
+										{
+											"key": "restaurantId",
+											"value": "<long>",
+											"description": "(Required) "
+										},
+										{
+											"key": "total",
+											"value": "<number>",
+											"description": "(Required) "
+										},
+										{
+											"key": "orderItems",
+											"value": "[object Object],[object Object]",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*",
+									"uuid": "3dbd1d69-ab2d-426d-8a21-3c28cd29bef7"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"<long>\",\n  \"restaurantId\": \"<long>\",\n  \"total\": \"<number>\",\n  \"orderItems\": [\n    {\n      \"id\": \"<long>\",\n      \"orderId\": \"<long>\",\n      \"menuItemId\": \"<long>\",\n      \"price\": \"<number>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"orderId\": \"<long>\",\n      \"menuItemId\": \"<long>\",\n      \"price\": \"<number>\"\n    }\n  ]\n}"
+						}
+					]
+				}
+			],
+			"id": "1c95eaa2-6f81-4568-835e-56c92ed086be"
+		}
+	],
+	"variable": [
+		{
+			"id": "e388b6cf-2b7c-4a6e-8f52-57f39c170517",
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		}
+	]
+}
