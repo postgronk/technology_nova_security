@@ -471,48 +471,48 @@
 	],
 	"variable": [
 		{
-			"id": "c61da876-36b6-457b-8cb3-d8012c47af2d",
+			"id": "60acf3ca-3329-47f8-95f2-103c296879a9",
 			"key": "--- Configuration properties ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5b8692b9-312f-4ab3-a1b6-6b0b39e5e77a",
+			"id": "39abb100-5064-4af3-b268-1d6c06233acd",
 			"key": "baseUrl",
 			"value": "https://cd0c3b1a-ed6a-4844-9f1f-d1cc89bb4ebc.mock.pstmn.io",
 			"type": "string"
 		},
 		{
-			"id": "bf2a27e6-b158-4b8c-94a4-30f2d8b84fe0",
+			"id": "178bfa37-211b-476a-aef6-03a46449a5a1",
 			"key": "useResponsesWithErrors",
 			"value": "false",
 			"type": "string"
 		},
 		{
-			"id": "7c43a499-6bfc-455c-9e9d-8450a56218d0",
+			"id": "95ed16fc-43e4-4b4e-a4c5-25076fb8800b",
 			"key": "--- Demonstration properties: Response Tests ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "71baf4f5-fad2-467b-94be-4ebd4f59ff94",
+			"id": "2d795ad2-268b-40d3-ab4b-dbb81b1cbce3",
 			"key": "validNetworksList",
 			"value": "Instance eu-1,Instance us-1,Instance ca-1"
 		},
 		{
-			"id": "bd5c242f-ac41-4e7c-b88a-7b89c65bd077",
+			"id": "9c9b6c43-1c3c-4f21-88ae-e475f8bfacf5",
 			"key": "requiredNetworkProperties",
 			"value": "instanceId,name,users",
 			"type": "string"
 		},
 		{
-			"id": "d0c9b10a-8ef2-492f-887c-79c91a122403",
+			"id": "03855ead-d2a1-4a0f-a37c-bea4513b690c",
 			"key": "optionalNetworkProperties",
 			"value": "weekly_active_users,average_minutes_per_user,monthly_active_users",
 			"type": "string"
 		},
 		{
-			"id": "34f2ac1f-1142-40f3-825c-0261bb7e4060",
+			"id": "6acef066-6625-43bd-a2b5-426e341e1ee4",
 			"key": "--- Demonstration properties: Request Tests ---",
 			"value": "",
 			"type": "string"
