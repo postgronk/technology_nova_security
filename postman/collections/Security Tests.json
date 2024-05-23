@@ -87,7 +87,6 @@
 											"status": "OK",
 											"code": 200,
 											"_postman_previewlanguage": "Text",
-											"_postman_previewtype": "html",
 											"header": [
 												{
 													"key": "Content-Type",
@@ -171,7 +170,6 @@
 											"status": "OK",
 											"code": 200,
 											"_postman_previewlanguage": "Text",
-											"_postman_previewtype": "html",
 											"header": [
 												{
 													"key": "Content-Type",
@@ -283,7 +281,6 @@
 											"status": "OK",
 											"code": 200,
 											"_postman_previewlanguage": "Text",
-											"_postman_previewtype": "html",
 											"header": [
 												{
 													"key": "Content-Type",
@@ -358,7 +355,6 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
-									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -463,7 +459,6 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "Text",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -534,7 +529,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "Text",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -552,7 +546,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b481fd23-2cd8-4c85-90b2-9261db420e1c",
+				"id": "b3fe3081-bc9f-4f25-ab7a-8b35dbd8e914",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -562,7 +556,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e42c06a7-aa1f-434e-a23d-befe9852e79b",
+				"id": "8b586a44-82be-4930-8c76-6eedb287c7e9",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Status code is 200\", function () {",
@@ -574,9 +568,9 @@
 	],
 	"variable": [
 		{
-			"id": "3a380195-175f-4c1f-886c-d7f480838235",
+			"id": "e1413050-f5e2-4469-bf34-85513fb43e7d",
 			"key": "baseUrl",
-			"value": "https://e6cb50e8-4aa7-4aa6-b593-c8f43d1fc7f5.mock.pstmn.io"
+			"value": "https://e80dd17d-c380-4206-9059-a801a70d2ea8.mock.pstmn.io"
 		}
 	]
 }
